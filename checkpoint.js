@@ -8,13 +8,10 @@ function getShow(name) {
   }
   
   class ViewTracker {
-  
-    // implement the constructor
-  
-    // add the trackView method
-  
-    // add the `summary` method
-  
+    constructor(name) {
+        this.name = name;
+        this.views = [];
+      }    
   }
   
   const tracker = new ViewTracker('Friends')
