@@ -12,6 +12,11 @@ function getShow(name) {
         this.name = name;
         this.views = [];
       }    
+    trackView = async () => {
+        const show = await getShow(this.name);
+        show.date = new Date()
+        views: [...views, show]
+      }    
   }
   
   const tracker = new ViewTracker('Friends')
