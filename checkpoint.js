@@ -17,6 +17,11 @@ function getShow(name) {
         show.date = new Date()
         views: [...views, show]
       }    
+    summary() {
+        return views.map(show => {
+        `${show.name} ${show.id} ${show.date}`;
+        })
+      }      
   }
   
   const tracker = new ViewTracker('Friends')
